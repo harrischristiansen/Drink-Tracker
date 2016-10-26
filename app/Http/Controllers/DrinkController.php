@@ -23,16 +23,32 @@ class DrinkController extends Controller {
 	/////////////////////////////// Home ///////////////////////////////
     
     public function getIndex() {
-		return view('welcome');
+		return view('pages.home');
 	}
 	
 	/////////////////////////////// Authentication ///////////////////////////////
     
+    public function getLogin() {
+		return view('pages.login');
+	}
+    
     public function postLogin() {
+		return view('welcome');
+	}
+    
+    public function getRegister() {
+		return view('pages.register');
+	}
+    
+    public function postRegister() {
 		return view('welcome');
 	}
 	
 	/////////////////////////////// Adding Data ///////////////////////////////
+    
+    public function getAddDrink() {
+		return view('pages.add');
+	}
     
     public function postAddDrink() {
 		return view('welcome');
@@ -41,11 +57,11 @@ class DrinkController extends Controller {
 	/////////////////////////////// Viewing Data ///////////////////////////////
     
     public function getDrinks() {
-		return view('welcome');
+		return view('pages.drinks');
 	}
     
     public function getDrinksDate() {
-		return view('welcome');
+		return view('pages.drinkDate');
 	}
     
 }

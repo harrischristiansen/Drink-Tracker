@@ -1,0 +1,51 @@
+/*
+	@ Harris Christiansen (Harris@HarrisChristiansen.com)
+	2016-09-18
+	Project: HTML5 Boilerplate
+*/
+
+/* ------------------------ HTML/Body ------------------------- */
+
+html, body {
+	background-color: black;
+	height: 100%
+}
+
+body {
+	padding-top: 55px;
+}
+
+/* ------------------------ Tables ------------------------- */
+
+.table-clickable tbody tr:hover {
+	cursor: pointer;
+}
+
+/* ------------------------ Centering Elements ------------------------- */
+
+#centerContainer {
+	 position: relative;
+	 height: 100%;
+}
+
+#centerElement {
+	position: absolute;
+	top: 45%;
+	transform: translateY(-50%);
+	width: 100%;
+}
+
+/* ------------------------ Authenticatino ------------------------- */
+
+#loginForm input, #registerForm input {
+	text-align: center;
+	background: transparent;
+	border: 1px solid green;
+	color: green;
+}
+
+#loginForm input::-webkit-input-placeholder, #registerForm input::-webkit-input-placeholder {
+	color: green;
+}
+
+/* ------------------------ End ------------------------- */
