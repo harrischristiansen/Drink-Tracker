@@ -35,7 +35,7 @@
 	
 </head><body>
 	
-	{{--
+	@if (false)
 	
 	<!-- Navbar -->
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -59,7 +59,7 @@
 		</div>
     </nav>
     
-    --}}
+    @endif
 
 	@yield('content')
 
