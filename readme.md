@@ -1,7 +1,7 @@
 # Drink Tracker
 
 ## TODO
-- [ ] Authentication
+- [ ] Authentication <- Next?
 	- [ ] Register
 	- [ ] Login
 - [ ] Add Drink Feature

@@ -32,7 +32,9 @@ class DrinkController extends Controller {
 		return view('pages.login');
 	}
     
-    public function postLogin() {
+    public function postLogin(Request $request) {
+		$password = $request->input('password');
+		
 		return view('welcome');
 	}
     
@@ -40,7 +42,11 @@ class DrinkController extends Controller {
 		return view('pages.register');
 	}
     
-    public function postRegister() {
+    public function postRegister(Request $request) {
+	    $name = $request->input('name');
+		$password = $request->input('password');
+
+		
 		return view('welcome');
 	}
 	
