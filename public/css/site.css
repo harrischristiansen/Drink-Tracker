@@ -35,13 +35,26 @@ body {
 	width: 100%;
 }
 
-/* ------------------------ Authenticatino ------------------------- */
+/* ------------------------ Authentication ------------------------- */
 
-#loginForm input, #registerForm input {
+#loginForm input, #registerForm input, #addForm input, #addForm select, #difficulty_slider {
 	text-align: center;
 	background: transparent;
+	-webkit-appearance: none;
 	border: 1px solid green;
 	color: green;
+}
+
+#difficulty_min {
+	margin-top: 20px;
+	float: left;
+	padding-bottom: 10px;
+}
+
+#difficulty_max {
+	margin-top: 20px;
+	float: right;
+	padding-bottom: 10px;
 }
 
 #loginForm input::-webkit-input-placeholder, #registerForm input::-webkit-input-placeholder {
