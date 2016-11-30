@@ -8,10 +8,10 @@
 Route::get('/', 'DrinkController@getIndex')->name('Home');
 
 /////////////////////////////// Authentication ///////////////////////////////
-Route::get('/login', 'DrinkController@getLogin');
-Route::post('/login', 'DrinkController@postLogin');
-Route::get('/register', 'DrinkController@getRegister');
-Route::post('/register', 'DrinkController@postRegister');
+Route::get('/login', 'AuthController@getLogin')->name('Login');
+Route::post('/login', 'AuthController@postLogin');
+Route::get('/register', 'AuthController@getRegister')->name('Register');
+Route::post('/register', 'AuthController@postRegister');
 
 /////////////////////////////// Adding Data ///////////////////////////////
 Route::get('/add', 'DrinkController@getAddDrink');

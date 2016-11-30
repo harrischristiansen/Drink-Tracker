@@ -2,8 +2,8 @@
 	
 /*
 	@ Harris Christiansen (Harris@HarrisChristiansen.com)
-	2016-04-25
-	Project: Members Tracking Portal
+	Project Created: October 2016
+	Project: Drink Tracker
 */
 
 namespace App\Http\Controllers;
@@ -11,7 +11,6 @@ namespace App\Http\Controllers;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
-use DB;
 use App\Http\Controllers\Controller;
 
 use App\Http\Requests;
@@ -24,30 +23,6 @@ class DrinkController extends Controller {
     
     public function getIndex() {
 		return view('pages.home');
-	}
-	
-	/////////////////////////////// Authentication ///////////////////////////////
-    
-    public function getLogin() {
-		return view('pages.login');
-	}
-    
-    public function postLogin(Request $request) {
-		$password = $request->input('password');
-		
-		return view('welcome');
-	}
-    
-    public function getRegister() {
-		return view('pages.register');
-	}
-    
-    public function postRegister(Request $request) {
-	    $name = $request->input('name');
-		$password = $request->input('password');
-
-		
-		return view('welcome');
 	}
 	
 	/////////////////////////////// Adding Data ///////////////////////////////

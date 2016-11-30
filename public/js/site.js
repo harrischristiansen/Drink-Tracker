@@ -24,7 +24,25 @@ $(document).ready(function() {
     	}
     });
 	
-	// Autofocus
+	// Submit after 4 characters
+	$("#loginField").on('keyup', function() {
+		if (this.value.length >= 4) {
+			$.post("/login", { password: this.value })
+			.done(function(data) {
+				if (data == "true") {
+					window.location.href = '/';
+				} else {
+					console.log(data);
+					$("#loginField").val("");
+				}
+			})
+		}
+	});
+	
+	autofocusOnFields();
+});
+
+function autofocusOnFields() {
 	$("#loginField").focus();
 	$("#loginField").select();
-});
+}

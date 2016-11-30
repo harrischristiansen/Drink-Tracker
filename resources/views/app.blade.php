@@ -60,6 +60,15 @@
     </nav>
     
     @endif
+    
+    @if(session()->has('msg'))
+	<div class='container section alert-section'>
+		<div class='section-container'>
+			<div class="alert alert-success" role="alert">{{ session()->get('msg') }}</div>
+			<?php session()->forget('msg'); ?>
+		</div>
+	</div>
+	@endif
 
 	@yield('content')
 

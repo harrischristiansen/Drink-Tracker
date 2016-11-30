@@ -5,7 +5,8 @@
 	<!-- Content -->
 	<div id="centerContainer"><div id="centerElement">
 		<div id="registerForm" class="row">
-			<form method="post" action="/register" class="col-xs-8 col-xs-offset-2 col-md-4 col-md-offset-4 validate">
+			<form method="post" action="{{ action('AuthController@postRegister') }}" class="col-xs-8 col-xs-offset-2 col-md-4 col-md-offset-4 validate">
+				{!! csrf_field() !!}
 				<input id="registerName" type="text" name="name" id="name" placeholder="Name" class="form-control" data-bvalidator="required" data-bvalidator-msg="Name Required">
 				<br>
 				<input type="password" name="password" id="password" placeholder="Password" class="form-control" data-bvalidator="required,rangelength[4:4]" data-bvalidator-msg="Password Required">
