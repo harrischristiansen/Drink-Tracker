@@ -12,6 +12,7 @@ Route::get('/login', 'AuthController@getLogin')->name('Login');
 Route::post('/login', 'AuthController@postLogin');
 Route::get('/register', 'AuthController@getRegister')->name('Register');
 Route::post('/register', 'AuthController@postRegister');
+Route::get('/logout', 'AuthController@getLogout')->name('Logout');
 
 /////////////////////////////// Adding Data ///////////////////////////////
 Route::get('/add', 'DrinkController@getAddDrink');

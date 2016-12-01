@@ -71,7 +71,7 @@ class AuthController extends Controller {
 
 
 		$request->session()->flash('msg', 'Success, account created!');
-		return $this->getIndex();
+		return $this->getLogin();
 	}
 	
 	private function passwordAvailable($password) {

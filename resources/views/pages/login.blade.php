@@ -10,5 +10,7 @@
 			</div>
 		</div>
 	</div></div>
+	
+	<a id="registerBtn" href="{{ action('AuthController@getRegister') }}">+</div>
 
 @stop

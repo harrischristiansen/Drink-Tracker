@@ -8,7 +8,7 @@
 
 namespace App\Http\Controllers;
 
-use Carbon\Carbon;
+use Auth;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use App\Http\Controllers\Controller;
@@ -22,6 +22,9 @@ class DrinkController extends Controller {
 	/////////////////////////////// Home ///////////////////////////////
     
     public function getIndex() {
+	    if (!Auth::check()) {
+		    return redirect()->guest('login');
+	    }
 		return view('pages.home');
 	}
 	

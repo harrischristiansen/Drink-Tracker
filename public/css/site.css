@@ -45,6 +45,25 @@ body {
 	color: green;
 }
 
+#registerBtn {
+	position: fixed;
+	right: 20px;
+	top: 20px;
+	padding: 8px 25px;
+	color: #000000;
+	border: none;
+	text-align: center;
+}
+
+#registerBtn:hover {
+	text-decoration: none;
+	border: 1px solid green;
+	color: green;
+}
+
+
+/* ------------------------ Drink Tracker ------------------------- */
+
 #difficulty_min {
 	margin-top: 20px;
 	float: left;
